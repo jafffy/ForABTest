@@ -1,9 +1,9 @@
 <div class="basePane">
   <div class="inputForm">
     <input class="subject" placeholder="Text" tabindex="1">
-    <button class="btn btn-lg subjectButton" tabindex="3"></button>
+    <button class="btn btn-lg subjectButton" tabindex="3" ng-click="submitSubjectInfo()"></button>
   </div>
-  <textarea class="mainEditor" style="overflow:hidden" placeholder="Please write here" rows="4" tabindex="2"></textarea>
+  <textarea class="mainEditor" style="overflow:hidden" placeholder="Please write here" rows="4" tabindex="2" ng-model="content"></textarea>
 </div>
 
 <div class="flatPane">

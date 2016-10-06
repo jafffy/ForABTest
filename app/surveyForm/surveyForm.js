@@ -30,10 +30,21 @@ angular.module('myApp.surveyForm', ['ngRoute'])
 	var subjectID = -1;
 	var type = "A";
 	var gender = "F";
+	var content = "";
 
 	return {
 		setSubjectID: function(sid) { subjectID = sid; },
 		setType: function(type_) { type = type_; },
-		setGender: function(gender_) { gender = gender_; }
+		setGender: function(gender_) { gender = gender_; },
+		setContent: function(content_) { content = content_; },
+		getSubjectID: function() { return subjectID; },
+		getType: function() { return type; },
+		getGender: function() { return gender; },
+		getAll: function() { return {
+			subjectID: subjectID,
+			type: type,
+			gender: gender,
+			content: content
+		}}
 	}
 }]);
