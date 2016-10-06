@@ -176,8 +176,7 @@ body {
 
 .mainEditor {
   color: #000000;
-  padding-left: 15px;
-  width: 100%;
+  width: 95%;
   font-size: 30px;
   border-width: 0px;
 }
