@@ -179,6 +179,7 @@ body {
   width: 95%;
   font-size: 30px;
   border-width: 0px;
+  padding-bottom: 10px;
 }
 
 .flatPane {
