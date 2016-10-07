@@ -12,13 +12,17 @@ angular.module('myApp.view1', ['ngRoute', 'myApp.surveyForm'])
 .controller('View1Ctrl',
   ["$scope", "$window", "$http", "$location", "subjectInfo",
     function($scope, $window, $http, $location, subjectInfo) {
+  $scope.content = "";
+  $scope.title = "";
+  $scope.lastContent = "";
+
   var realIP = '54.186.195.78';
 	$scope.submitSubjectInfo = function() {
 		subjectInfo.setContent($scope.content);
+    subjectInfo.setTitle($scope.title);
 		$http.post('http://' + realIP + ':3000', subjectInfo.getAll());
     $location.path("/view2");
   };
-  $scope.content = "";
   $scope.getRowCount = function() {
     if (subjectInfo.getType() == "A") {
       return 4;
@@ -35,13 +39,11 @@ angular.module('myApp.view1', ['ngRoute', 'myApp.surveyForm'])
     }
   };
 
-  $scope.lastContent = "";
-
   $scope.change = function() {
     if (!$scope.content.startsWith($scope.lastContent)) {
       $scope.content = $scope.lastContent;
     } else {
       $scope.lastContent = $scope.content;
     }
-  }
+  };
 }]);

@@ -31,12 +31,14 @@ angular.module('myApp.surveyForm', ['ngRoute'])
 	var type = "A";
 	var gender = "F";
 	var content = "";
+	var title = "";
 
 	return {
 		setSubjectID: function(sid) { subjectID = sid; },
 		setType: function(type_) { type = type_; },
 		setGender: function(gender_) { gender = gender_; },
 		setContent: function(content_) { content = content_; },
+    setTitle: function(title_) { title = title_; },
 		getSubjectID: function() { return subjectID; },
 		getType: function() { return type; },
 		getGender: function() { return gender; },
@@ -44,7 +46,8 @@ angular.module('myApp.surveyForm', ['ngRoute'])
 			subjectID: subjectID,
 			type: type,
 			gender: gender,
-			content: content
-		}}
-	}
+			content: content,
+			title: title
+		};}
+	};
 }]);

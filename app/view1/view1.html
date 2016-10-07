@@ -1,17 +1,21 @@
-<div class="basePane">
-  <div class="inputForm">
-    <input class="subject" placeholder="Text" tabindex="1">
+<div ng-controller="View1Ctrl">
+  <div class="basePane">
+    <div class="inputForm">
+      <input class="subject" placeholder="Title"
+             tabindex="1" ng-model="title">
+    </div>
+    <textarea class="mainEditor"
+              style="overflow:hidden; font-size: {{getFontSize()}}px;"
+              placeholder="Please write here"
+              rows="{{getRowCount()}}"
+              tabindex="2"
+              ng-model="content"
+              ng-change="change()"></textarea>
+    <button class="btn btn-lg subjectButton"
+            tabindex="3" ng-click="submitSubjectInfo()">Submit</button>
   </div>
-  <textarea class="mainEditor"
-            style="overflow:hidden; font-size: {{getFontSize()}}px;"
-            placeholder="Please write here"
-            rows="{{getRowCount()}}"
-            tabindex="2"
-            ng-model="content"
-            ng-change="change()"></textarea>
-  <button class="btn btn-lg subjectButton" tabindex="3" ng-click="submitSubjectInfo()">Submit</button>
-</div>
 
-<div class="flatPane">
-  <label>You're good enough!</label>
+  <div class="flatPane">
+    <label>You're good enough!</label>
+  </div>
 </div>
