@@ -2,7 +2,12 @@
   <div class="inputForm">
     <input class="subject" placeholder="Text" tabindex="1">
   </div>
-  <textarea class="mainEditor" style="overflow:hidden" placeholder="Please write here" rows="4" tabindex="2" ng-model="content"></textarea>
+  <textarea class="mainEditor"
+            style="overflow:hidden; font-size: {{getFontSize()}}px;"
+            placeholder="Please write here"
+            rows="{{getRowCount()}}"
+            tabindex="2"
+            ng-model="content"></textarea>
   <button class="btn btn-lg subjectButton" tabindex="3" ng-click="submitSubjectInfo()">Submit</button>
 </div>
 

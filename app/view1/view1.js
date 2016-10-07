@@ -19,4 +19,19 @@ angular.module('myApp.view1', ['ngRoute', 'myApp.surveyForm'])
     $location.path("/view2");
   };
   $scope.content = "";
-}])
+  $scope.getRowCount = function() {
+    if (subjectInfo.getType() == "A") {
+      return 4;
+    } else {
+      return 12;
+    }
+  };
+
+  $scope.getFontSize = function() {
+    if (subjectInfo.getType() == "A") {
+      return 30;
+    } else {
+      return 15;
+    }
+  };
+}]);
