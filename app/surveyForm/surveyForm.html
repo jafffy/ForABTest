@@ -1,8 +1,22 @@
-<h1>This is survey form</h1>
+<p>
+  본 실험은 비밀 글쓰기 인터페이스 효과에 대하여 알아보고자 합니다.
+</p>
+<p>
+  실험은 총 2세트로 구성되어있습니다.
+<br>
+- B or A type 비밀 글쓰기 -> 2. 설문지
+<br>
+- A or B type 비밀 글쓰기 -> 2. 설문지
+</p>
+<p>
+설문을 완료하시면 아이스 아메리카노 기프티콘이 발송될 예정입니다.
+<br>
+다시 한번 설문에 참여해주셔서 감사합니다.
+</p>
 
 <div ng-controller="SurveyFormCtrl">
 	<div>
-		<text>subject id </text>
+		<text>subject id(이전 실험과 동일한 ID를 넣으셔야 쿠폰이 발송됩니다!) </text>
 		<input ng-model="subjectID" style="color: black;">
 	</div>
 	<div>
@@ -20,6 +34,6 @@
 		</select>
 	</div>
 	<div>
-		<a href="#!/view1" style="color: white;" ng-click="passSubjectInfo()">Go to next page</a>
+		<a href="#!/descriptionForm" style="color: white;" ng-click="passSubjectInfo()">Go to next page</a>
 	</div>
 </div>

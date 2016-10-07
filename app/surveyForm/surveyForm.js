@@ -13,8 +13,8 @@ angular.module('myApp.surveyForm', ['ngRoute'])
 }])
 
 .controller('SurveyFormCtrl',
-	["$scope", "subjectInfo",
-		function($scope, subjectInfo) {
+	["$scope", "$location", "subjectInfo",
+		function($scope, $location, subjectInfo) {
 	$scope.subjectID = "";
 	$scope.type = "A";
 	$scope.gender = "F";

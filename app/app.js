@@ -4,6 +4,7 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.surveyForm',
+  'myApp.descriptionForm',
   'myApp.view1',
   'myApp.view2',
   'myApp.version'
