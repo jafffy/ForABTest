@@ -7,7 +7,8 @@
             placeholder="Please write here"
             rows="{{getRowCount()}}"
             tabindex="2"
-            ng-model="content"></textarea>
+            ng-model="content"
+            ng-change="change()"></textarea>
   <button class="btn btn-lg subjectButton" tabindex="3" ng-click="submitSubjectInfo()">Submit</button>
 </div>
 

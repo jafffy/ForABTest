@@ -34,4 +34,14 @@ angular.module('myApp.view1', ['ngRoute', 'myApp.surveyForm'])
       return 15;
     }
   };
+
+  $scope.lastContent = "";
+
+  $scope.change = function() {
+    if (!$scope.content.startsWith($scope.lastContent)) {
+      $scope.content = $scope.lastContent;
+    } else {
+      $scope.lastContent = $scope.content;
+    }
+  }
 }]);
