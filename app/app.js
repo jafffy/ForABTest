@@ -7,6 +7,7 @@ angular.module('myApp', [
   'myApp.descriptionForm',
   'myApp.view1',
   'myApp.view2',
+  'myApp.wordMatchingView',
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
