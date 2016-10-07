@@ -10,12 +10,13 @@ angular.module('myApp.view1', ['ngRoute', 'myApp.surveyForm'])
 }])
 
 .controller('View1Ctrl',
-  ["$scope", "$window", "$http", "subjectInfo",
-    function($scope, $window, $http, subjectInfo) {
+  ["$scope", "$window", "$http", "$location", "subjectInfo",
+    function($scope, $window, $http, $location, subjectInfo) {
   var realIP = '54.186.195.78';
 	$scope.submitSubjectInfo = function() {
 		subjectInfo.setContent($scope.content);
 		$http.post('http://' + realIP + ':3000', subjectInfo.getAll());
+    $location.path("/view2");
   };
   $scope.content = "";
-}]);
+}])
