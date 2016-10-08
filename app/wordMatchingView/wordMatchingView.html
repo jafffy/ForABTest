@@ -1,7 +1,7 @@
 <label style="font-size: 1.17em; display: block; margin-top: 82px;">위험하다고 생각되는 단어를 선택해주세요.</label>
 <div class="wordMatchingPanel">
   <p ng-repeat="card in cards">
-    <input class="wordCard" type="button" value="{{name}}" ng-repeat="name in card">
+    <input class="wordCard" type="button" value="{{c.name}}" ng-repeat="c in card">
   </p>
 </div>
 

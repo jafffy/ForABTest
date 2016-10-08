@@ -31,7 +31,7 @@ app.config(['$routeProvider', function($routeProvider) {
         card = [];
       }
 
-      card.push($scope.words[i]);
+      card.push({name: $scope.words[i]});
     }
 
     $scope.cards.push(card);
