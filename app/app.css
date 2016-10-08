@@ -31,7 +31,7 @@ body {
 body {
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 5);
+  /* text-shadow: 0 1px 3px rgba(0, 0, 0, 5); */
 }
 
 .site-wrapper {
@@ -168,8 +168,18 @@ body {
 
 .subjectButton {
   margin-left: auto;
-  color: #000000;
+  color: #fff;
   font-size: 15px;
+  width: 90%;
+  height: 45px;
+	background-color: transparent;
+	border-color: white;
+	border-style: solid;
+  margin-top: 10px;
+}
+
+.subjectButton:hover {
+  background-color: #A8A8A8;
 }
 
 .mainEditor {
@@ -180,8 +190,8 @@ body {
 }
 
 .flatPane {
-  background-color: #666;
-  height: 10em;
+  background-color: rgba(232, 232, 232, .8);
+  height: 8em;
   width: 90%;
   margin: 0 auto;
   text-align: center;
@@ -198,7 +208,7 @@ label {
   width: 90%;
   margin: 0 auto;
 }
-
+/*
 .btn,
 .btn:hover,
 .btn:focus,
@@ -219,6 +229,7 @@ label {
   -moz-transition: all .2s;
   transition: all .2s;
 }
+*/
 
 .wordCard:hover {
   width: 200px;

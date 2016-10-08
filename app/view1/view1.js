@@ -36,7 +36,7 @@ angular.module('myApp.view1', ['ngRoute', 'myApp.surveyForm'])
       $scope.adviceContent = defaultAdviceContent;
   }, 1000);
 
-  var defaultAdviceContent = "You're already good enough!";
+  var defaultAdviceContent = "자신의 마음 속 이야기를 글로 쓰고 마주하세요! 마음이 한결 가벼워질 거에요.";
   $scope.adviceContent = defaultAdviceContent;
   $scope.getAdviceContent = function() {
 
@@ -64,11 +64,14 @@ angular.module('myApp.view1', ['ngRoute', 'myApp.surveyForm'])
   };
 
   $scope.getFontSize = function() {
+    return 28;
+    /*
     if (subjectInfo.getType() == "A") {
       return 30;
     } else {
       return 15;
     }
+    */
   };
 
   $scope.change = function() {
