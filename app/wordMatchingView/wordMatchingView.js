@@ -17,9 +17,24 @@ app.config(['$routeProvider', function($routeProvider) {
   ["$scope", "$location", "dataService",
     function($scope, $location, dataService) {
   $scope.words = null;
+  $scope.cards = [];
   dataService.getWords().then(function(dataResponse) {
 	  var data = JSON.parse('{' + dataResponse.data + '}');
     $scope.words = data['words'];
+
+    var card = null;
+	  for (var i = 0; i < $scope.words.length; ++i) {
+	    if (i % 4 == 0) {
+	    	if (card != null) {
+	    	  $scope.cards.push(card);
+        }
+        card = [];
+      }
+
+      card.push($scope.words[i]);
+    }
+
+    $scope.cards.push(card);
   });
 
 	var colorList = ["#4368BA", "#AFAF1E", "#FA605B", "#2FD1B2", "#FCC106"]
