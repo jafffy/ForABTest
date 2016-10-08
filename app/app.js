@@ -7,10 +7,11 @@ angular.module('myApp', [
   'myApp.descriptionForm',
   'myApp.view1',
   'myApp.view2',
+  'myApp.chartView',
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
 
-  $routeProvider.otherwise({redirectTo: '/surveyForm'});
+  $routeProvider.otherwise({redirectTo: '/chartView'});
 }]);
