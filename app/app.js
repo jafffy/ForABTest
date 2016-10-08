@@ -11,6 +11,7 @@ angular.module('myApp', [
   'myApp.chartView',
   'myApp.diagnosisCompleteView',
   'myApp.addMaumNoteView',
+  'myApp.wordMatchingView',
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
