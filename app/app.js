@@ -3,6 +3,7 @@
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
   'ngRoute',
+  'chart.js',
   'myApp.surveyForm',
   'myApp.descriptionForm',
   'myApp.view1',
