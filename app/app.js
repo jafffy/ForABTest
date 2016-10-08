@@ -12,10 +12,11 @@ angular.module('myApp', [
   'myApp.diagnosisCompleteView',
   'myApp.addMaumNoteView',
   'myApp.wordMatchingView',
+  'myApp.maumNoteSelectView',
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
 
-  $routeProvider.otherwise({redirectTo: '/addMaumNoteView'});
+  $routeProvider.otherwise({redirectTo: '/maumNoteSelectView'});
 }]);
