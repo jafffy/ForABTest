@@ -9,7 +9,7 @@ angular.module('myApp.chartView', ['ngRoute', 'chart.js'])
 	});
 }])
 
-.controller('ChartViewCtrl', ['$scope', function($scope) {
+.controller('ChartViewCtrl', ['$scope', '$location', function($scope, $location) {
 	$scope.series = ['Series A', 'Series B'];
 	$scope.data = [
 		[ {x: 0, y: 10}, {x: 1, y: 1}, {x: 2, y: 6}, {x: 5, y: 2} ],
@@ -23,4 +23,7 @@ angular.module('myApp.chartView', ['ngRoute', 'chart.js'])
 			}]
 		}
 	};
+	$scope.nextPage = function() {
+		$location.path('/maumNoteSelectView');
+	}
 }]);

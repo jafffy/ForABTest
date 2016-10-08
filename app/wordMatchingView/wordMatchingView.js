@@ -13,7 +13,7 @@ angular.module('myApp.wordMatchingView', ['ngRoute'])
   });
 }])
 
-.controller('WordMatchingViewCtrl', ["$scope", function($scope) {
+.controller('WordMatchingViewCtrl', ["$scope", "$location", function($scope, $location) {
 	var colorList = ["#4368BA", "#AFAF1E", "#FA605B", "#2FD1B2", "#FCC106"]
 
 	$scope.color = ["", "#C8C8C8", "#C8C8C8", "#C8C8C8", "#C8C8C8", "#C8C8C8"];
@@ -43,5 +43,9 @@ angular.module('myApp.wordMatchingView', ['ngRoute'])
     }
     $scope.color[i] = "#C8C8C8";
     $scope.fontColor[i] = "#898989";
+  };
+
+  $scope.nextPage = function() {
+    $location.path('/chartView');
   };
 }]);

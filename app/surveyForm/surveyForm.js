@@ -42,6 +42,7 @@ angular.module('myApp.surveyForm', ['ngRoute'])
 		getSubjectID: function() { return subjectID; },
 		getType: function() { return type; },
 		getGender: function() { return gender; },
+		getTitle: function() { return title; },
 		getAll: function() { return {
 			subjectID: subjectID,
 			type: type,

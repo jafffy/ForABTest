@@ -1,35 +1,35 @@
 <label style="font-size: 1.17em; display: block; margin-top: 82px;">위험하다고 생각되는 단어를 선택해주세요.</label>
 <div class="wordMatchingPanel">
   <p>
-    <input class="btn btn-primary wordCard" type="button" value="한글" ng-mouseover="setHoverColor(1)" ng-mouseleave="setLeaveColor(1)" ng-click="setColor(1)" style="background-color: {{color[1]}}; color: {{fontColor[1]}};">
-    <input class="btn btn-primary wordCard" type="button" value="한글" ng-mouseover="setHoverColor(2)" ng-mouseleave="setLeaveColor(2)" ng-click="setColor(2)" style="background-color: {{color[2]}}; color: {{fontColor[2]}};">
-    <input class="btn btn-primary wordCard" type="button" value="한글" ng-mouseover="setHoverColor(3)" ng-mouseleave="setLeaveColor(3)" ng-click="setColor(3)" style="background-color: {{color[3]}}; color: {{fontColor[3]}};">
-    <input class="btn btn-primary wordCard" type="button" value="한글" ng-mouseover="setHoverColor(4)" ng-mouseleave="setLeaveColor(4)" ng-click="setColor(4)" style="background-color: {{color[4]}}; color: {{fontColor[4]}};">
+    <input class="wordCard" type="button" value="한글" ng-mouseover="setHoverColor(1)" ng-mouseleave="setLeaveColor(1)" ng-click="setColor(1)" style="background-color: {{color[1]}}; color: {{fontColor[1]}};">
+    <input class="wordCard" type="button" value="한글" ng-mouseover="setHoverColor(2)" ng-mouseleave="setLeaveColor(2)" ng-click="setColor(2)" style="background-color: {{color[2]}}; color: {{fontColor[2]}};">
+    <input class="wordCard" type="button" value="한글" ng-mouseover="setHoverColor(3)" ng-mouseleave="setLeaveColor(3)" ng-click="setColor(3)" style="background-color: {{color[3]}}; color: {{fontColor[3]}};">
+    <input class="wordCard" type="button" value="한글" ng-mouseover="setHoverColor(4)" ng-mouseleave="setLeaveColor(4)" ng-click="setColor(4)" style="background-color: {{color[4]}}; color: {{fontColor[4]}};">
   </p>
   <p>
-    <input class="btn btn-primary wordCard" type="button" value="Input">
-    <input class="btn btn-primary wordCard" type="button" value="Input">
-    <input class="btn btn-primary wordCard" type="button" value="Input">
-    <input class="btn btn-primary wordCard" type="button" value="Input">
+    <input class="wordCard" type="button" value="Input">
+    <input class="wordCard" type="button" value="Input">
+    <input class="wordCard" type="button" value="Input">
+    <input class="wordCard" type="button" value="Input">
   </p>
   <p>
-    <input class="btn btn-primary wordCard" type="button" value="Input">
-    <input class="btn btn-primary wordCard" type="button" value="Input">
-    <input class="btn btn-primary wordCard" type="button" value="Input">
-    <input class="btn btn-primary wordCard" type="button" value="Input">
+    <input class="wordCard" type="button" value="Input">
+    <input class="wordCard" type="button" value="Input">
+    <input class="wordCard" type="button" value="Input">
+    <input class="wordCard" type="button" value="Input">
   </p>
   <p>
-    <input class="btn btn-primary wordCard" type="button" value="Input">
-    <input class="btn btn-primary wordCard" type="button" value="Input">
-    <input class="btn btn-primary wordCard" type="button" value="Input">
-    <input class="btn btn-primary wordCard" type="button" value="Input">
+    <input class="wordCard" type="button" value="Input">
+    <input class="wordCard" type="button" value="Input">
+    <input class="wordCard" type="button" value="Input">
+    <input class="wordCard" type="button" value="Input">
   </p>
   <p>
-    <input class="btn btn-primary wordCard" type="button" value="Input">
-    <input class="btn btn-primary wordCard" type="button" value="Input">
-    <input class="btn btn-primary wordCard" type="button" value="Input">
-    <input class="btn btn-primary wordCard" type="button" value="Input">
+    <input class="wordCard" type="button" value="Input">
+    <input class="wordCard" type="button" value="Input">
+    <input class="wordCard" type="button" value="Input">
+    <input class="wordCard" type="button" value="Input">
   </p>
 </div>
 
-<button class="btn btn-lg subjectButton" style="font-size: 1.17em;">위험 단어 선택 완료</button>
+<button class="btn btn-lg subjectButton" style="font-size: 1.17em;" ng-click="nextPage()">위험 단어 선택 완료</button>

@@ -9,5 +9,10 @@ angular.module('myApp.addMaumNoteView', ['ngRoute'])
 	});
 }])
 
-.controller('AddMaumNoteViewCtrl', ['$scope', function($scope){
+.controller('AddMaumNoteViewCtrl', ['$scope', '$location', "subjectInfo", function($scope, $location, subjectInfo){
+	$scope.title = "";
+	$scope.nextPage = function() {
+		subjectInfo.setTitle($scope.title);
+		$location.path('/view1');
+	};
 }]);

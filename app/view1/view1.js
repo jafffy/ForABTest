@@ -14,7 +14,7 @@ angular.module('myApp.view1', ['ngRoute', 'myApp.surveyForm'])
     "$interval",
     function($scope, $window, $http, $location, subjectInfo, $interval) {
   $scope.content = "";
-  $scope.title = "";
+  $scope.title = subjectInfo.getTitle();
   $scope.lastContent = "";
 
   $scope.elapsedTime = 0;
@@ -51,9 +51,8 @@ angular.module('myApp.view1', ['ngRoute', 'myApp.surveyForm'])
     }
 
 		subjectInfo.setContent($scope.content);
-    subjectInfo.setTitle($scope.title);
 		$http.post('http://' + realIP + ':3000', subjectInfo.getAll());
-    $location.path("/view2");
+    $location.path("/wordMatchingView");
   };
   $scope.getRowCount = function() {
     if (subjectInfo.getType() == "A") {
