@@ -233,8 +233,8 @@ label {
 .wordCard {
   width: 167px;
   height: 167px;
-	margin-left: 8px;
-	margin-right: 0px;
+	margin-left: 4px;
+	margin-right: 4px;
 	color: #898989;
 	font-weight: bold;
   font-size: 24px;
