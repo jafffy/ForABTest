@@ -10,7 +10,13 @@ app.service('dataService', function($http) {
 			method: 'GET',
 			url: 'http://localhost:3000/users?userID=1',
 		});
-	}
+	};
+	this.getWords = function() {
+		return $http({
+			method: 'GET',
+			url: 'http://localhost:3000/words'
+		});
+	};
 });
 
 app.config(['$routeProvider', function($routeProvider) {
