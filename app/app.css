@@ -220,7 +220,7 @@ label {
   transition: all .2s;
 }
 
-.btn:hover {
+.wordCard:hover {
   width: 200px;
   height: 160px;
 }
