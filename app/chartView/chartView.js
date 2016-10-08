@@ -30,10 +30,10 @@ app.config(['$routeProvider', function($routeProvider) {
   });
 
 	$scope.series = ['Series A', 'Series B'];
-	$scope.labels = ["날짜 1", "날짜 2", "날짜 3", "날짜 4"];
+	$scope.labels = ["날짜 1", "날짜 2", "날짜 3"];
 	$scope.data = [
-		[3, 4, 5, 6],
-		[5, 3, 4, 2]
+		[3, 4, 5],
+		[5, 3, 4]
 	];
 	$scope.datasetOverride = [{ yAxisID: 'y-axis-1' }];
 	$scope.options = {
