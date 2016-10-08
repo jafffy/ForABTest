@@ -10,10 +10,11 @@ angular.module('myApp', [
   'myApp.view2',
   'myApp.chartView',
   'myApp.diagnosisCompleteView',
+  'myApp.addMaumNoteView',
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
 
-  $routeProvider.otherwise({redirectTo: '/diagnosisCompleteView'});
+  $routeProvider.otherwise({redirectTo: '/addMaumNoteView'});
 }]);
