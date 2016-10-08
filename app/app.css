@@ -144,7 +144,7 @@ body {
     width: 100%;
   }
 }
-
+/*
 @media (min-width: 992px) {
   .masthead,
   .mastfoot,
@@ -152,7 +152,7 @@ body {
     width: 700px;
   }
 }
-
+*/
 .inputForm {
   padding-top: 15px;
   padding-right: 15px;
@@ -170,7 +170,7 @@ body {
   margin-left: auto;
   color: #fff;
   font-size: 15px;
-  width: 90%;
+  width: 700px;
   height: 45px;
 	background-color: transparent;
 	border-color: white;
@@ -192,7 +192,7 @@ body {
 .flatPane {
   background-color: rgba(232, 232, 232, .8);
   height: 8em;
-  width: 90%;
+  width: 700px;
   margin: 0 auto;
   text-align: center;
   display: table;
@@ -205,8 +205,8 @@ label {
 
 .basePane {
   background-color: #fff;
-  width: 90%;
-  margin: 0 auto;
+  width: 700px;
+  margin: auto;
 }
 /*
 .btn,
@@ -231,7 +231,20 @@ label {
 }
 */
 
-.wordCard:hover {
-  width: 200px;
-  height: 160px;
+.wordCard {
+  width: 167px;
+  height: 167px;
+	margin-left: 8px;
+	margin-right: 0px;
+}
+
+.noteIcon {
+  width: 140px;
+  height: 140px;
+  font-size: 40px;
+  color: black;
+}
+
+.wordMatchingPanel {
+  margin-top: 145px;
 }
