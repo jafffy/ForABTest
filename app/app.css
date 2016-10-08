@@ -254,5 +254,9 @@ label {
   color: black;
 }
 
-.wordMatchingPanel {
+.resultChart {
+  width: 40%;
+	height: 40%;
+	margin-left: auto;
+  margin-right: auto;
 }

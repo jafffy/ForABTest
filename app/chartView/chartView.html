@@ -1,5 +1,16 @@
-<h1>차트 뷰 입니다!</h1>
+<label style="font-size: 1.17em; display: block; margin-top: 82px">누구누구 님의 진단 결과입니다</label>
 
-<div ng-controller="ChartViewCtrl">
+<div>
+	<label style="font-size: 1.40em; display: block">트라우마 발달 가능성은 <strong>보통(45%)</strong>입니다.</label>
+	<label style="font-size: 1.00em; display: block">1단계 - 안전 (0~30) 2단계 - 보통 (31~45) 3단계 - 주의 (46~80) 4단계 - 위험 (81 이상)</label>
+</div>
+
+<div class="resultChart">
 	<canvas class="chart chart-line" chart-data="data" chart-series="series" chart-options="options"></canvas>
 </div>
+
+<div class="flatPane">
+	<label style="font-size: 1.17em;">간단한 글 작성으로 어쩌구 저쩌구</label>
+</div>
+
+<button class="btn btn-lg subjectButton" style="font-size: 1.17em;">완료</button>
