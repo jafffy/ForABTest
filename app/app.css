@@ -126,11 +126,10 @@ body {
 
 @media (min-width: 768px) {
   .masthead {
-    position: fixed;
+	  position: fixed;
     top: 0;
   }
   .mastfoot {
-    position: fixed;
     bottom: 0;
   }
 
@@ -236,6 +235,16 @@ label {
   height: 167px;
 	margin-left: 8px;
 	margin-right: 0px;
+	color: #898989;
+	font-weight: bold;
+  font-size: 24px;
+	border: none;
+}
+
+.wordCard:hover {
+  background-color: #898989;
+  color: #ffffff;
+	border: none;
 }
 
 .noteIcon {
@@ -246,5 +255,4 @@ label {
 }
 
 .wordMatchingPanel {
-  margin-top: 145px;
 }
