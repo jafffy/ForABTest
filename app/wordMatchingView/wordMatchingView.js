@@ -21,8 +21,7 @@ app.config(['$routeProvider', function($routeProvider) {
 	var count = 0;
 
   dataService.getWords().then(function(dataResponse) {
-	  var data = JSON.parse('{' + dataResponse.data + '}');
-    $scope.words = data['words'];
+    $scope.words = dataResponse.data['words'];
 
     var card = null;
 	  for (var i = 0; i < $scope.words.length; ++i) {
