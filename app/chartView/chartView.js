@@ -35,7 +35,7 @@ app.config(['$routeProvider', function($routeProvider) {
 	  console.log($scope.responseFromServer);
   });
 
-	$scope.series = ['Series A', 'Series B'];
+	$scope.series = ['총 단어 개수', '진단 결과'];
 	$scope.labels = ["날짜 1", "날짜 2", "날짜 3"];
 	$scope.data = [
 		[3, 4, 5],
