@@ -38,10 +38,10 @@ app.config(['$routeProvider', function($routeProvider) {
 	$scope.series = ['총 단어 개수', '진단 결과'];
 	$scope.labels = ["날짜 1", "날짜 2", "날짜 3"];
 	$scope.data = [
-		[3, 4, 5],
-		[5, 3, 4]
+		[569, 278, 137],
+		[22.21, 12.96, 14]
 	];
-	$scope.datasetOverride = [{ yAxisID: 'y-axis-1' }];
+	$scope.datasetOverride = [{ yAxisID: 'y-axis-1' }, { yAxisID: 'y-axis-2' }];
 	$scope.options = {
 		scales: {
 			yAxes: [{
@@ -49,6 +49,11 @@ app.config(['$routeProvider', function($routeProvider) {
 				type: 'linear',
 				display: true,
 				position: 'left'
+			}, {
+				id: 'y-axis-2',
+				type: 'linear',
+				display: true,
+				position: 'right'
 			}]
 		}
 	};
