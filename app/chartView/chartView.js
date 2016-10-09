@@ -8,13 +8,13 @@ app.service('dataService', function($http) {
 	this.getData = function() {
 		return $http({
 			method: 'GET',
-			url: 'http://localhost:3000/users?userID=1',
+			url: 'http://54.186.195.78:3000/users?userID=1',
 		});
 	};
 	this.getWords = function() {
 		return $http({
 			method: 'GET',
-			url: 'http://localhost:3000/words'
+			url: 'http://54.186.195.78:3000/words'
 		});
 	};
 });
