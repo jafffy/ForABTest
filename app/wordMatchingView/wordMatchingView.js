@@ -45,9 +45,11 @@ app.config(['$routeProvider', function($routeProvider) {
     if (c.isClicked)
       return;
 
+    /*
 	  if (count >= 5) {
 	    return;
     }
+    */
     count += 1;
     c.isClicked = true;
 
