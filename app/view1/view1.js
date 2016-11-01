@@ -21,6 +21,8 @@ angular.module('myApp.view1', ['ngRoute', 'myApp.surveyForm'])
   $scope.isElapsedTimeStarted = false;
 
   $scope.lastModifiedTime = 0;
+  $scope.adviceColor = "#fff";
+  $scope.adviceBackgroundColor = "rgba(232, 232, 232, .8)";
 
   $interval(function() {
     if ($scope.isElapsedTimeStarted == false)
@@ -29,14 +31,20 @@ angular.module('myApp.view1', ['ngRoute', 'myApp.surveyForm'])
     $scope.elapsedTime += 1;
 	  $scope.lastModifiedTime += 1;
 
-    if ($scope.lastModifiedTime > 5)
+    if ($scope.lastModifiedTime > 5) {
       $scope.adviceContent = "마주하기 힘든 기억이더라도, 용기를 내보세요!";
+      $scope.adviceColor = "#2d2d2d";
+      $scope.adviceBackgroundColor = "#fdc107";
+    }
     else if (Math.abs($scope.elapsedTime - 60 * 15) < 3)
       $scope.adviceContent = "15분 지났습니다.";
     else if (Math.abs($scope.elapsedTime - 60 * 30) < 3)
       $scope.adviceContent = "30분 지났습니다.";
-    else
+    else {
       $scope.adviceContent = defaultAdviceContent;
+	    $scope.adviceColor = "#fff";
+      $scope.adviceBackgroundColor = "rgba(232, 232, 232, .8)";
+    }
   }, 1000);
 
   $scope.loadBasicContent = function() {
